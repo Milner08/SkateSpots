@@ -1,0 +1,61 @@
+<% provide(:title, @spot.name) %>
+<h1 class="page-header">Spot <small><%= @spot.name %></small></h1>
+<div class="row">
+  <aside class="span3">
+  	<section>
+  		<address>
+  			<strong><%= @spot.name %></strong><br> 
+  			<%= @spot.address1 %><br>
+  			<% if !@spot.address2.empty? %>
+  			<%= @spot.address2 %><br>
+  			<% end %>
+  			<%= @spot.city %><br>
+  			<% if !@spot.postcode.empty? %>
+  			<%= @spot.postcode %><br>
+  			<% end %>
+  		</address>
+    </section>
+    <section class="buttons">
+      <%= render 'shared/like_form' if signed_in? %>
+      <%= link_to "Edit", edit_spot_path(@spot), class: "btn btn-info" %> 
+      <% if current_user.admin? %>
+       <%= link_to "Delete?", @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
+      <% end %>
+    </section>
+  </aside>
+  <div class="span9">
+    <div class="row">
+      <section class="description">
+        <h3>Description</h3><hr>
+        <%= @spot.description %>  
+      </section>
+    </div>
+    <div class="row">
+      <div class="thumbnail">
+        <%= link_to "http://maps.google.co.uk/maps?q=#{getAddress @spot}" do %>
+          <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=16&size=640x400&scale=2&center=<<%= getAddress @spot %>&maptype=hybrid&sensor=false" alt="Google Map"/>
+          <div class="caption">
+            <h5>Map</h5>
+            <p>If the map is incorrect, Please take a second to adjust the address</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <% if @spot.reviews.any? %>
+      <div class="row">
+        <h3>Reviews (<%= @spot.reviews.count %>)</h3>
+        <ol class="reviews">
+          <%= render @reviews %>
+        </ol>
+        <%= will_paginate @reviews %>
+      </div>
+    <% end %>
+    <% if signed_in? %>
+      <div class="row">
+        <section>
+          <%= render 'shared/review_form' %>
+        </section> 
+      </div> 
+    <% end %>
+  </div>
+</div>

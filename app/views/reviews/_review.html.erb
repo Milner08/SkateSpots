@@ -1,0 +1,25 @@
+<li class="review">
+	<div class="row">
+		<aside class="span2">
+			<div class="userpic">
+				<%= gravatar_for review.user %>
+			</div>
+			<span class="username">
+				<%= link_to review.user.name, review.user %>
+			</span>
+			<span class="timestamp">
+	    	<%= time_ago_in_words(review.created_at).capitalize%> ago.
+	  	</span>
+	  	<span class="del">
+	  		<% if current_user?(review.user) || current_user.admin? %>
+	    		<%= link_to "delete", review, method:  :delete,
+	                                     confirm: "You sure?",
+	                                     title:   review.content %>
+	  		<% end %>
+	  	</span>
+		</aside>
+		<section>
+			<span class="content"><%= review.content %></span>
+		</section>
+	</div>
+</li>

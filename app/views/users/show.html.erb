@@ -1,0 +1,31 @@
+<% provide(:title, @user.name) %>
+<h1 class="page-header">Users <small><%= @user.name %></small></h1>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <%= @user.email %>
+      <%= render 'shared/stats' %>
+    </section>
+    <section class="buttons">
+      <%= render 'shared/follow_form' if signed_in? %>
+      <%= link_to "Edit", edit_user_path(@user), class: "btn btn-medium btn-info edit_user" %>
+      <%= link_to "Delete", @user, method: :delete, confirm: "You sure?", class: "btn btn-medium btn-danger delete_user" %>  
+    </section>
+  </aside>
+  <aside class="span8">
+  	<div class="row">
+  		<section>
+        <% if @user.reviews.any? %>
+  			 <h1>Recent reviews by <%= @user.name %></h1>
+          <%= render "showreview" %>
+        <% else %>
+          <h1><%= @user.name %> hasnt posted any reviews </h1>
+        <% end %>
+      </section>
+  	</div>
+  </aside>
+</div>

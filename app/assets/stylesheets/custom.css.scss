@@ -1,0 +1,406 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+@mixin border_radius{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -1px;
+}
+
+.header{
+  margin-bottom:10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+h3 {
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+  margin-top:0;
+}
+
+h4{
+  font-size:2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  margin-bottom:0px;
+}
+hr{
+  padding:0;
+  margin:10px;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+.page-header{
+  a{
+    font-weight:normal;
+    letter-spacing:0.1px;
+  }
+}
+/* sidebar */
+
+aside {
+  section {
+    border: 1px solid #CCC;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    @include border_radius;
+    padding: 8.5px;
+    margin: 0 0 9px;
+    background-color: whiteSmoke;
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.6em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+    }
+    a.btn{
+      margin:0;
+      margin-right:5px;
+    }
+    address{
+      margin-bottom:0;
+    }
+  }
+}
+
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+  form{
+    margin:2px 0;
+  }
+  .btn{
+    margin:0;
+  }
+}
+
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
+.btnpad{
+  margin-bottom:12px;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+.hero-unit {
+  margin-bottom:15 px;
+  a.btn{
+    margin-top: 20px;
+  }
+}
+
+
+.span3 a.btn{
+}
+#error_explanation {
+  color:#f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
+
+ /* users index */
+
+.users {
+  list-style: none;
+  margin: 10px 0 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $grayLighter;
+  }
+}
+
+/* reviews */
+
+.reviews {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  .review {
+    padding: 10px 0 0;
+    border-top: 1px solid #e8e8e8;
+    aside{
+      border-right:1px solid #e8e8e8;
+      width:120px;
+      display:block;
+      overflow:auto;
+      span{
+        display:block;
+      }
+      .userpic{
+        display:block;
+        overflow:auto;
+        width:100%;
+      }
+    }
+    section{
+      padding-left:7.5px;
+
+    }
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+  font-size:0.9em;
+  padding-right:5px;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+.new_review {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+/* spot form */
+
+.new_spot, .edit_spot{
+  textarea {
+    height:100px;
+    margin-bottom: 5px;
+  }
+}
+
+/* float */
+.floatright{
+  float:right;
+}
+
+/* Spot show style */
+
+.span9, .span8{
+  .row{
+    padding: 0 10px 10px;
+    .description, .map{
+      border: 1px solid #CCC;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      @include border_radius;
+      padding: 8.5px;
+      background-color: whiteSmoke;
+      img{
+        display:block;
+        margin: 7.5px auto;
+      }
+      em{
+        text-align:center;
+      }
+    }
+    section{
+      .btn{
+        margin-bottom:0;
+      }
+      form{
+        margin-bottom:0;
+      }
+      margin-bottom:0;
+    }
+  }
+}
+.spotname{
+  margin-bottom:10px;
+}
+.nockover{
+  margin:18px;
+}
+.span6{
+  .map{
+    width:100px;
+    float:left;
+    margin-right:10px;
+  }
+  .well{
+    padding:7.5px 14px;
+  }
+  a{
+    color:$grayDark;
+  }
+  a:hover{
+    text-decoration:none;
+    color:gray;
+  }
+}
+.buttons{
+  .edit_user, .delete_user, .edit_spot, .delete_spot{
+    margin-top:0px;
+  }
+  #follow_form, #like_form{
+    display:inline;
+    .new_relationship, .edit_relationship, .new_spot_like, .edit_spot_like{
+     width:100px; 
+     display:inline;
+     *{
+      margin:0;
+      margin-right:5px;
+     }
+    }
+  }
+}

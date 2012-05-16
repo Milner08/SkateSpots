@@ -1,0 +1,16 @@
+<% provide(:title, 'All Spots') %>
+<h1 class="page-header">Spots <small>All</small>
+<%= link_to "Add a new spot", new_spot_path, class: "btn btn-large btn-primary floatright" %>
+</h1>
+<div class="row">
+	<div class="span12">
+		<div class="row">
+			
+		</div>
+		<div class="row">
+			<%= will_paginate %>
+  				<%= render @spots %>
+			<%= will_paginate %>
+		</div>
+	</div>
+</div>

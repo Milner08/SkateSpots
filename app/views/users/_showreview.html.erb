@@ -1,0 +1,14 @@
+<%@user.reviews.each do |review| %>
+<div class="review">
+  <span class="content"><%= review.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(review.created_at) %> ago for <%= link_to review.spot.name, review.spot %>      |      
+    <% if current_user?(review.user) || current_user.admin? %>
+    <%= link_to "Delete", review, method:  :delete,
+                                     confirm: "You sure?",
+                                     title:   review.content %>
+  <% end %>
+  </span>
+  
+</div>
+<% end %>
