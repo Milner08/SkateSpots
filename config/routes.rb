@@ -1,6 +1,18 @@
 Skate::Application.routes.draw do
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers, :spots
+    end
+  end
+  resources :spots do
+    member do
+      get :users
+    end
+  end
   resources :sessions, only: [:new, :create, :destroy]
+  resources :reviews, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
+  resources :spot_likes, only: [:create, :destroy]
 
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'

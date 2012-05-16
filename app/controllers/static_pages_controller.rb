@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+  	@spots = Spot.recent
   end
 
   def help

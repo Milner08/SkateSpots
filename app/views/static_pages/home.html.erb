@@ -1,13 +1,26 @@
-<div class="center hero-unit">
-  <h1>Welcome to Skate Spots</h1>
+<% if !signed_in? %>
+	<div class="row">
+		<div class="span12">
+			<section class="hero-unit center">
+				<h1>Welcome to <%= site_title %></h1>
 
-  <h2>
-    This is the home page for the
-    <a href="http://thisisbakery.co.uk">Bakery's</a>
-    spot locator.
-  </h2>
+			  <h2>This is the home page for the my new skate spot locator.</h2>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+			  <h3>Check out <a href="http://thisisbakery.co.uk">Bakery</a></h3>
+			  <% if !signed_in? %>
+			  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+			  <% end %>
+			</section>
+		</div>
+	</div>
+<% end %>
+<div class="row">
+	<h1 class="span12 page-header nockover">Newest Spots
+		<% if signed_in? %>
+		<%= link_to "Add a new spot", new_spot_path, class: "btn btn-large btn-primary floatright" %>
+		<% end %>
+	</h1>
+	<%= render @spots %>
 </div>
 
 <%= link_to image_tag("bakery.jpg", alt: "Rails", width:"100px"), 'http://thisisbakery.co.uk/' %>
