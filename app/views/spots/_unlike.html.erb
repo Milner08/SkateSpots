@@ -1,5 +1,0 @@
-<%= form_for(current_user.spot_likes.find_by_user_id(current_user),
-             html: { method: :delete },
-             remote: true) do |f| %>
-  <%= f.submit "Unlike", class: "btn btn-medium" %>
-<% end %>

@@ -11,7 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120516004956) do
+ActiveRecord::Schema.define(:version => 20120517001007) do
+
+  create_table "likes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "spot_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "likes", ["spot_id"], :name => "index_spot_likes_on_spot_id"
+  add_index "likes", ["user_id", "spot_id"], :name => "index_spot_likes_on_user_id_and_spot_id", :unique => true
+  add_index "likes", ["user_id"], :name => "index_spot_likes_on_user_id"
+
+  create_table "pictures", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "spot_id"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "url"
+  end
+
+  add_index "pictures", ["spot_id"], :name => "index_pictures_on_spot_id"
+  add_index "pictures", ["user_id"], :name => "index_pictures_on_user_id"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -33,17 +56,6 @@ ActiveRecord::Schema.define(:version => 20120516004956) do
   end
 
   add_index "reviews", ["spot_id", "created_at"], :name => "index_reviews_on_spot_id_and_created_at"
-
-  create_table "spot_likes", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "spot_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "spot_likes", ["spot_id"], :name => "index_spot_likes_on_spot_id"
-  add_index "spot_likes", ["user_id", "spot_id"], :name => "index_spot_likes_on_user_id_and_spot_id", :unique => true
-  add_index "spot_likes", ["user_id"], :name => "index_spot_likes_on_user_id"
 
   create_table "spots", :force => true do |t|
     t.string   "name"

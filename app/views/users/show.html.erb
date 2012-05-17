@@ -12,8 +12,8 @@
     </section>
     <section class="buttons">
       <%= render 'shared/follow_form' if signed_in? %>
-      <%= link_to "Edit", edit_user_path(@user), class: "btn btn-medium btn-info edit_user" %>
-      <%= link_to "Delete", @user, method: :delete, confirm: "You sure?", class: "btn btn-medium btn-danger delete_user" %>  
+      <%= link_to raw('<i class="icon-edit icon-white"></i> Edit'), edit_user_path(@user), class: "btn btn-medium btn-info edit_user" %>
+      <%= link_to raw('<i class="icon-remove icon-white"></i> Delete'), @user, method: :delete, confirm: "You sure?", class: "btn btn-medium btn-danger delete_user" %>  
     </section>
   </aside>
   <aside class="span8">

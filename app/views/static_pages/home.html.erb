@@ -17,7 +17,7 @@
 <div class="row">
 	<h1 class="span12 page-header nockover">Newest Spots
 		<% if signed_in? %>
-		<%= link_to "Add a new spot", new_spot_path, class: "btn btn-large btn-primary floatright" %>
+		<%= link_to raw('<i class="icon-plus icon-white"></i>   New spot'), new_spot_path, class: "btn btn-large btn-primary floatright" %>
 		<% end %>
 	</h1>
 	<%= render @spots %>

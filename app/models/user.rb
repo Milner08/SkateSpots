@@ -2,11 +2,14 @@
 #
 # Table name: users
 #
-#  id         :integer         not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  created_at :datetime        not null
-#  updated_at :datetime        not null
+#  id              :integer         not null, primary key
+#  name            :string(255)
+#  email           :string(255)
+#  created_at      :datetime        not null
+#  updated_at      :datetime        not null
+#  password_digest :string(255)
+#  remember_token  :string(255)
+#  admin           :boolean         default(FALSE)
 #
 
 class User < ActiveRecord::Base
@@ -21,8 +24,10 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships
 
-  has_many :spot_likes, dependent: :destroy
-  has_many :liked_spots, through: :spot_likes, source: :spot
+  has_many :likes, dependent: :destroy
+  has_many :liked_spots, through: :likes, source: :spot
+
+  has_many :pictures, dependent: :destroy
 
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
@@ -47,15 +52,15 @@ class User < ActiveRecord::Base
   end
 
   def likes?(spot)
-    spot_likes.find_by_spot_id(spot.id)
+    likes.find_by_spot_id(spot.id)
   end
 
   def like!(spot)
-    spot_likes.create!(spot_id: spot.id)
+    likes.create!(spot_id: spot.id)
   end
 
   def dislike!(spot)
-    spot_likes.find_by_spot_id(spot.id).destroy
+    likes.find_by_spot_id(spot.id).destroy
   end
 
   private

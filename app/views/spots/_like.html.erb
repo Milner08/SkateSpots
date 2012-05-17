@@ -1,4 +1,0 @@
-<%= form_for(current_user.spot_likes.build(user_id: current_user.id), remote: true) do |f| %>
-  <div><%= hidden_field_tag :spot_id, @spot.id %></div>
-  <%= f.submit "Like", class: "btn btn-primary btn-medium" %>
-<% end %>

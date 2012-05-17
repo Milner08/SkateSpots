@@ -1,7 +1,7 @@
 <% provide(:title, @spot.name) %>
 <h1 class="page-header">Spot <small><%= @spot.name %></small></h1>
 <div class="row">
-  <aside class="span3">
+  <aside class="span4">
   	<section>
   		<address>
   			<strong><%= @spot.name %></strong><br> 
@@ -17,13 +17,13 @@
     </section>
     <section class="buttons">
       <%= render 'shared/like_form' if signed_in? %>
-      <%= link_to "Edit", edit_spot_path(@spot), class: "btn btn-info" %> 
+      <%= link_to raw('<i class="icon-edit icon-white"></i>   Edit'), edit_spot_path(@spot), class: "btn btn-info" %> 
       <% if current_user.admin? %>
-       <%= link_to "Delete?", @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
+       <%= link_to raw('<i class="icon-remove icon-white"></i>   Delete?'), @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
       <% end %>
     </section>
   </aside>
-  <div class="span9">
+  <div class="span8">
     <div class="row">
       <section class="description">
         <h3>Description</h3><hr>
