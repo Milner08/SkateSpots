@@ -41,7 +41,7 @@
     <div class="row">
       <div class="thumbnail">
         <%= link_to "http://maps.google.co.uk/maps?q=#{getAddress @spot}" do %>
-          <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=16&size=640x400&scale=2&center=<<%= getAddress @spot %>&maptype=hybrid&sensor=false" alt="Google Map"/>
+          <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=16&size=640x400&scale=1&center=<<%= getAddress @spot %>&maptype=hybrid&sensor=false" alt="Google Map"/>
           <div class="caption">
             <h5>Map</h5>
             <p>If the map is incorrect, Please take a second to adjust the address</p>
