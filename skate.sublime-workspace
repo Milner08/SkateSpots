@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"inline"
+			],
+			[
+				"pic",
+				"picture"
+			],
+			[
+				"pict",
+				"Pictures"
+			],
+			[
+				"P",
+				"Pictures"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
 				"bu",
 				"buttonText"
 			],
@@ -29,10 +49,6 @@
 			],
 			[
 				"margin",
-				"margin-top"
-			],
-			[
-				"mar",
 				"margin-top"
 			],
 			[
@@ -236,26 +252,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/users/index.html.erb",
+			"file": "app/controllers/photos_controller.rb",
 			"settings":
 			{
-				"buffer_size": 181,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/_user.html.erb",
-			"settings":
-			{
-				"buffer_size": 162,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 701,
+				"buffer_size": 949,
 				"line_ending": "Unix"
 			}
 		}
@@ -344,24 +344,59 @@
 	},
 	"file_history":
 	[
-		"/Users/tomas/Development/Ruby/Rails/skate/Gemfile",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/application.js",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/ie.css.sass",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/user.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_photo.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/config/routes.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518165142_rename_pictures_to_photos.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/photo.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spots_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_new_photo.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_header.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/pictures.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/application.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/index.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/index.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/new.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518173935_rename_ulr_to_title_for_photos.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_pictures.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_new_picture.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/new.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_pictures.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_new_picture.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/pictures_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/pictures.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spots.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/home.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_follow.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/application.js",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/spots.js.coffee",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/index.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_picture.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_newPicture.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518150641_add_picture_to_pictures.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/Gemfile",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_user.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/index.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/relationships.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/reviews.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spot_like.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/users.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_unfollow.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/static_pages_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/spot.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/new.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/user.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/ie.css.sass",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_follow.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_unlike.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_like.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_header.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120517001007_remove_picture_id_from_pictures.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/pictures.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/spot.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/application.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/like.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/likes_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_like_form.html.erb",
@@ -381,24 +416,18 @@
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/relationships_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/relationship.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_follow_form.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/config/routes.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spot_like_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_follow.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/help.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_user.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_stats.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/edit.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/users_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_spot.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/static_pages_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_showreview.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/sessions/new.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/new.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/edit.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/about.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/contact.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/index.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/new.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show_follow.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/spots_helper.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/reviews_controller.rb",
@@ -410,8 +439,6 @@
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120513013120_add_lat_and_long_to_spots.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120513184441_create_relationships.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/sessions_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spots_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/spots.js.coffee",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/googleMaps.js",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/review.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/jquery.gmap-1.1.0-min.js",
@@ -444,34 +471,7 @@
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120510032749_add_index_to_users_email.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_footer.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/static_pages_spec.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_shim.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/.gitignore",
-		"/Users/tomas/.gemrc",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120509150938_add_email_to_users.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120509150450_add_index_to_user_emails.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120509150331_add_index_to_user_email.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120509150257_add_index_to_users_email.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/home/index.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_form.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120508110521_remove_county_from_spot.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/public/stylesheets/scaffold.css",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_form.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120503185800_create_spots.rb",
-		"/Users/tomas/Development/Javacc/Assignment 4/3b.jjt",
-		"/Users/tomas/Development/Javacc/Assignment 4/Main.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/SimpleNode.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/Variable.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/LexiconVisitor.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/testinput",
-		"/Users/tomas/Development/Javacc/Assignment 4/Token.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/testfile.WOW",
-		"/Users/tomas/Development/Javacc/Assignment 4/LexiconVisitor2.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/LexicalAnalyser.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/ASTFactor.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/ASTAdditionOperator.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/ASTBooleanOperator.java",
-		"/Users/tomas/Development/Javacc/Assignment 4/LexiconVisitor.java2",
-		"/Users/tomas/Development/Javacc/Assignment 4/LexiconVisitor copy.java"
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_shim.html.erb"
 	],
 	"find":
 	{
@@ -479,9 +479,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -489,6 +490,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"><%= @",
+			".btn",
 			"page-header",
 			"0px",
 			"span12",
@@ -546,225 +549,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/views/users/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 181,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/users/_user.html.erb",
-					"settings":
-					{
-						"buffer_size": 162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								162,
-								162
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -772,19 +558,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
-					"file": "config/routes.rb",
+					"buffer": 0,
+					"file": "app/controllers/photos_controller.rb",
 					"settings":
 					{
-						"buffer_size": 701,
+						"buffer_size": 949,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								363,
-								363
+								878,
+								878
 							]
 						],
 						"settings":
@@ -876,7 +662,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 207.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -912,7 +698,7 @@
 		"cols":
 		[
 			0.0,
-			0.593468785732,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -959,6 +745,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 220.0,
+	"side_bar_width": 261.0,
 	"status_bar_visible": true
 }
