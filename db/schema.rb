@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120517001007) do
+ActiveRecord::Schema.define(:version => 20120518150641) do
 
   create_table "likes", :force => true do |t|
     t.integer  "user_id"
@@ -28,9 +28,13 @@ ActiveRecord::Schema.define(:version => 20120517001007) do
     t.integer  "user_id"
     t.integer  "spot_id"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
     t.string   "url"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
   add_index "pictures", ["spot_id"], :name => "index_pictures_on_spot_id"
@@ -77,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20120517001007) do
     t.string   "password_digest"
     t.string   "remember_token"
     t.boolean  "admin",           :default => false
+    t.string   "city"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

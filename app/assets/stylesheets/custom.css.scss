@@ -15,6 +15,13 @@ $grayMediumLight: #eaeaea;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+@mixin well{
+  border: 1px solid #CCC;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  @include border_radius;
+  padding: 8.5px;
+  background-color: whiteSmoke;
+}
 
 /* universal */
 
@@ -82,11 +89,13 @@ h4{
   margin-bottom: 30px;
   text-align: center;
 }
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
   margin-bottom:0px;
 }
+
 hr{
   padding:0;
   margin:10px;
@@ -152,16 +161,13 @@ footer {
     letter-spacing:0.1px;
   }
 }
-/* sidebar */
+
+/* General Sidebar */
 
 aside {
   section {
-    border: 1px solid #CCC;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    @include border_radius;
-    padding: 8.5px;
-    margin: 0 0 9px;
-    background-color: whiteSmoke;
+    @include well;
+    margin-bottom: 10px;
     span {
       display: block;
       margin-bottom: 3px;
@@ -173,59 +179,10 @@ aside {
       letter-spacing: -1px;
       margin-bottom: 3px;
     }
-    a.btn{
-      margin:0;
-      margin-right:5px;
-    }
     address{
       margin-bottom:0;
     }
   }
-}
-
-.stats {
-  overflow: auto;
-  a {
-    float: left;
-    padding: 0 10px;
-    border-left: 1px solid $grayLighter;
-    color: gray;
-    &:first-child {
-      padding-left: 0;
-      border: 0;
-    }
-    &:hover {
-      text-decoration: none;
-      color: $blue;
-    }
-  }
-  strong {
-    display: block;
-  }
-  form{
-    margin:2px 0;
-  }
-  .btn{
-    margin:0;
-  }
-}
-
-
-.user_avatars {
-  overflow: auto;
-  margin-top: 10px;
-  .gravatar {
-    margin: 1px 1px;
-  }
-}
-
-.btnpad{
-  margin-bottom:12px;
-}
-
-.gravatar {
-  float: left;
-  margin-right: 10px;
 }
 
 /* forms */
@@ -239,16 +196,7 @@ input, textarea, select, .uneditable-input {
   @include box_sizing;
 }
 
-.hero-unit {
-  margin-bottom:15 px;
-  a.btn{
-    margin-top: 20px;
-  }
-}
 
-
-.span3 a.btn{
-}
 #error_explanation {
   color:#f00;
   ul {
@@ -262,146 +210,13 @@ input, textarea, select, .uneditable-input {
   @extend .error;
  }
 
- /* users index */
-
-.users {
-  list-style: none;
-  margin: 10px 0 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid $grayLighter;
-  }
-}
-
-/* reviews */
-
-.reviews {
-  list-style: none;
-  margin: 10px 0 0 0;
-
-  .review {
-    padding: 10px 0 0;
-    border-top: 1px solid #e8e8e8;
-    aside{
-      border-right:1px solid #e8e8e8;
-      width:120px;
-      display:block;
-      overflow:auto;
-      span{
-        display:block;
-      }
-      .userpic{
-        display:block;
-        overflow:auto;
-        width:100%;
-      }
-    }
-    section{
-      padding-left:7.5px;
-
-    }
-  }
-}
-.content {
-  display: block;
-}
-.timestamp {
-  color: $grayLight;
-  font-size:0.9em;
-  padding-right:5px;
-}
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
-.new_review {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
-
-/* spot form */
-
-.new_spot, .edit_spot{
-  textarea {
-    height:100px;
-    margin-bottom: 5px;
-  }
-}
-
 /* float */
 .floatright{
   float:right;
 }
 
-/* Spot show style */
-
-.span9, .span8{
-  .row{
-    padding: 0 10px 10px;
-    .description, .map{
-      border: 1px solid #CCC;
-      border: 1px solid rgba(0, 0, 0, 0.15);
-      @include border_radius;
-      padding: 8.5px;
-      background-color: whiteSmoke;
-      img{
-        display:block;
-        margin: 7.5px auto;
-      }
-      em{
-        text-align:center;
-      }
-    }
-    section{
-      .btn{
-        margin-bottom:0;
-      }
-      form{
-        margin-bottom:0;
-      }
-      margin-bottom:0;
-    }
-  }
-}
-.spotname{
-  margin-bottom:10px;
-}
-.nockover{
-  margin:18px;
-}
-.span6{
-  .map{
-    width:100px;
-    float:left;
-    margin-right:10px;
-  }
-  .well{
-    padding:7.5px 14px;
-  }
-  a{
-    color:$grayDark;
-  }
-  a:hover{
-    text-decoration:none;
-    color:gray;
-  }
-}
-.buttons{
-  .edit_user, .delete_user, .edit_spot, .delete_spot{
-    margin-top:0px;
-  }
-  #follow_form, #like_form{
-    display:inline;
-    .new_relationship, .edit_relationship, .new_like, .edit_like{
-     width:100px; 
-     display:inline;
-     *{
-      margin:0;
-      margin-right:5px;
-     }
-    }
-  }
+.btn{
+  margin:0;
+  vertical-align: middle;
+  margin-right:4px;
 }

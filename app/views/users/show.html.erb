@@ -2,12 +2,13 @@
 <h1 class="page-header">Users <small><%= @user.name %></small></h1>
 <div class="row">
   <aside class="span4">
-    <section>
+    <section class>
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-      <%= @user.email %>
+      <%= @user.email %> 
+      <%= @user.city %>
       <%= render 'shared/stats' %>
     </section>
     <section class="buttons">
@@ -21,7 +22,9 @@
   		<section>
         <% if @user.reviews.any? %>
   			 <h1>Recent reviews by <%= @user.name %></h1>
-          <%= render "showreview" %>
+          <ol class="reviews">
+            <%= render "showreview" %>
+          </ol>
         <% else %>
           <h1><%= @user.name %> hasnt posted any reviews </h1>
         <% end %>

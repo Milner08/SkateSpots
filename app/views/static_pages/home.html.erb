@@ -15,10 +15,12 @@
 	</div>
 <% end %>
 <div class="row">
-	<h1 class="span12 page-header nockover">Newest Spots
-		<% if signed_in? %>
-		<%= link_to raw('<i class="icon-plus icon-white"></i>   New spot'), new_spot_path, class: "btn btn-large btn-primary floatright" %>
-		<% end %>
-	</h1>
+	<% if signed_in? && !@local.nil?%>
+		<h1 class="span12 page-header nockover">Local Spots
+			<%= link_to raw('<i class="icon-plus icon-white"></i>   New spot'), new_spot_path, class: "btn btn-large btn-primary floatright" %>
+		</h1>
+		<%= render @local %>
+	<% end %>
+	<h1 class="span12 page-header nockover">Newest Spots</h1>
 	<%= render @spots %>
 </div>

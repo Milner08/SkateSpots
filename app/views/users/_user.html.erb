@@ -1,4 +1,6 @@
 <li>
   <%= gravatar_for user %>
-  <%= link_to user.name, user %>
+  <%= link_to user.name, user %><br>
+  <% @user = user %> <!--Cheating :B -->
+  <%= render 'shared/follow_form' if signed_in? %>
 </li>

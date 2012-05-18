@@ -1,0 +1,18 @@
+<%= provide(:title, 'Edit Picture') %>
+<h1 class="page-header">Spots <small>Edit Picture</small></h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@picture) do |f| %>
+      <%= render 'shared/error_messages', object: f.object  %>
+
+      <%= f.label :picture %>
+      <%= f.file_field :picture %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description %>
+
+      <%= f.submit "Edit picture", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
