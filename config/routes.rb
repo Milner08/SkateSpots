@@ -6,14 +6,14 @@ Skate::Application.routes.draw do
   end
   resources :spots do
     member do
-      get :users
+      get :users, :photos
     end
   end
   resources :sessions, only: [:new, :create, :destroy]
   resources :reviews, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :likes, only: [:create, :destroy]
-  resources :pictures
+  resources :photos, only: [:create, :destroy, :edit, :show]
 
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'

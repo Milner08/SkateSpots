@@ -11,6 +11,10 @@ class SpotsController < ApplicationController
     @spot = Spot.find(params[:id])
     @reviews = @spot.reviews.paginate(page: params[:page])
     @review = @spot.reviews.build if signed_in?
+    if signed_in?
+      @photo = Photo.new
+    end
+    @photos = Photo.find_all_by_spot_id(@spot.id)
   end
 
   def create

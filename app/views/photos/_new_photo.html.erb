@@ -1,0 +1,26 @@
+<div class="modal hide fade" id="myModal">
+  <div class="modal-header">
+    <button class="btn close" data-dismiss="modal">×</button>
+    <h1>Upload Picture</h1>
+  </div>
+  <div class="modal-body">
+    <%= form_for @photo do |f| %>
+  		<%= render 'shared/error_messages', object: f.object  %>
+	
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+ 			<%= f.label :picture %>
+  		<%= f.file_field :picture %>
+
+      <%= hidden_field_tag :spot_id, @spot.id %>
+
+  		<%= f.label :description %>
+  		<%= f.text_area :description, :rows => 5, :cols => 40%>		
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+	  	<%= f.submit "Add new photo", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

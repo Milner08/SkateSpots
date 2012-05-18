@@ -19,7 +19,7 @@
       <%= render 'shared/like_form' if signed_in? %>
       <%= link_to raw('<i class="icon-edit icon-white"></i>   Edit'), edit_spot_path(@spot), class: "btn btn-info" %> 
       <% if current_user.admin? %>
-       <%= link_to raw('<i class="icon-remove icon-white"></i>   Delete?'), @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
+        <%= link_to raw('<i class="icon-remove icon-white"></i>   Delete'), @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
       <% end %>
     </section>
   </aside>
@@ -28,6 +28,14 @@
       <section class="description">
         <h3>Description</h3><hr>
         <%= @spot.description %>  
+      </section>
+    </div>
+    <div class="row">
+      <section class="photos">
+        <ul class="thumbnails">
+        <%= render @photos %>
+        </ul>        
+        <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-medium">Add Photo</a>  
       </section>
     </div>
     <div class="row">
@@ -59,3 +67,4 @@
     <% end %>
   </div>
 </div>
+<%= render 'photos/new_photo' %>
