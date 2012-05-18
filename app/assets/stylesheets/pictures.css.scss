@@ -14,3 +14,7 @@
 .photos{
 	@include well;
 }
+
+.span7{
+	border-right:solid 1px $grayMediumLight;
+}
