@@ -11,7 +11,7 @@ class LikesController < ApplicationController
   end
 
   def destroy
-    @spot = SpotLike.find(params[:id]).spot
+    @spot = Like.find(params[:id]).spot
     current_user.dislike!(@spot)
     respond_to do |format|
       format.html { redirect_to @spot }

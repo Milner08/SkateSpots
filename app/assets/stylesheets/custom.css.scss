@@ -13,7 +13,7 @@ $grayMediumLight: #eaeaea;
 @mixin well{
   border: 1px solid #CCC;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  @include border_radius(4);
+  @include border_radius(4px);
   padding: 8.5px;
   background-color: whiteSmoke;
 }
