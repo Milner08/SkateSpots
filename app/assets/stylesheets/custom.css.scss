@@ -8,6 +8,7 @@ $grayMediumLight: #eaeaea;
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
 }
+
 @mixin border_radius{
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -180,6 +181,11 @@ aside {
     }
     address{
       margin-bottom:0;
+    }
+  }
+  .thumbnail{
+    margin: {
+      bottom:10px;
     }
   }
 }

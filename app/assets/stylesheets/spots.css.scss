@@ -13,7 +13,7 @@
 }
 
 /* Spot show style */
-.span8{
+.span8, .span9{
   .row{
     padding: 0 10px 10px;
     .description{
@@ -22,6 +22,12 @@
   }
 }
 
+#addPic{
+  margin:{
+    top: 0;
+    bottom:14px;
+  }
+}
 /* Half Page spot styles */
 .span6{
   .well{

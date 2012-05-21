@@ -1,4 +1,4 @@
-<div class="modal hide fade" id="myModal">
+<div class="modal hide fade" id="addPhoto">
   <div class="modal-header">
     <button class="btn close" data-dismiss="modal">×</button>
     <h1>Upload Picture</h1>
@@ -19,7 +19,7 @@
   		<%= f.text_area :description, :rows => 5, :cols => 40%>		
   </div>
   <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
 	  	<%= f.submit "Add new photo", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>

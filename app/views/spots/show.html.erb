@@ -1,7 +1,8 @@
 <% provide(:title, @spot.name) %>
-<h1 class="page-header">Spot <small><%= @spot.name %></small></h1>
+<h1 class="page-header">Spot <small><%= @spot.name %></small><%= render 'shared/like_form' if signed_in? %>
+</h1>
 <div class="row">
-  <aside class="span4">
+  <aside class="span3">
   	<section>
   		<address>
   			<strong><%= @spot.name %></strong><br> 
@@ -15,56 +16,58 @@
   			<% end %>
   		</address>
     </section>
-    <section class="buttons">
-      <%= render 'shared/like_form' if signed_in? %>
-      <%= link_to raw('<i class="icon-edit icon-white"></i>   Edit'), edit_spot_path(@spot), class: "btn btn-info" %> 
-      <% if current_user.admin? %>
-        <%= link_to raw('<i class="icon-remove icon-white"></i>   Delete'), @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %> <br/>
+    <div class="thumbnail">
+      <%= link_to "http://maps.google.co.uk/maps?q=#{getAddress @spot}" do %>
+        <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=17&size=600x600&scale=2&center=<<%= getAddress @spot %>&maptype=hybrid&sensor=false" alt="Google Map"/>
       <% end %>
-    </section>
+    </div>
   </aside>
-  <div class="span8">
-    <div class="row">
-      <section class="description">
-        <h3>Description</h3><hr>
+  <div class="span9">
+
+    <ul class="nav nav-tabs" id="myTab">
+      <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+      <li><a href="#reviews" data-toggle="tab">Reviews (<%= @spot.reviews.count %>)</a></li>
+      <li><a href="#photos" data-toggle="tab">Photos</a></li>
+      <li><a href="#edit" data-toggle="tab">Edit</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane active" id="about">
         <%= @spot.description %>  
-      </section>
-    </div>
-    <div class="row">
-      <section class="photos">
-        <ul class="thumbnails">
-        <%= render @photos %>
-        </ul>        
-        <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-medium">Add Photo</a>  
-      </section>
-    </div>
-    <div class="row">
-      <div class="thumbnail">
-        <%= link_to "http://maps.google.co.uk/maps?q=#{getAddress @spot}" do %>
-          <img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=16&size=640x400&scale=1&center=<<%= getAddress @spot %>&maptype=hybrid&sensor=false" alt="Google Map"/>
-          <div class="caption">
-            <h5>Map</h5>
-            <p>If the map is incorrect, Please take a second to adjust the address</p>
-          </div>
-        <% end %>
       </div>
-    </div>
-    <% if @spot.reviews.any? %>
-      <div class="row">
-        <h3>Reviews (<%= @spot.reviews.count %>)</h3>
+
+      <div class="tab-pane" id="reviews">
         <ol class="reviews">
-          <%= render @reviews %>
+          <% if @spot.reviews.any?%>
+            <%= render @reviews %>
+          <% end %>
         </ol>
         <%= will_paginate @reviews %>
+        <% if signed_in? %>
+          <div class="row">
+            <section>
+              <%= render 'shared/review_form' %>
+            </section> 
+          </div> 
+        <% end %>
       </div>
-    <% end %>
-    <% if signed_in? %>
-      <div class="row">
+
+      <div class="tab-pane" id="photos">
+        <a data-toggle="modal" href="#addPhoto" class="btn btn-primary btn-medium" id="addPic">Add Photo</a>  
         <section>
-          <%= render 'shared/review_form' %>
-        </section> 
-      </div> 
-    <% end %>
-  </div>
+          <ul class="thumbnails">
+          <%= render @photos %>
+          </ul>        
+        </section>
+      </div>
+
+      <div class="tab-pane" id="edit">
+        <%= render 'edit' %>
+      </div>
+
+    </div>
+
+  </div><!-- End of span9, Main content -->
 </div>
 <%= render 'photos/new_photo' %>
