@@ -19,10 +19,10 @@ class Spot < ActiveRecord::Base
 
   has_many :reviews, dependent: :destroy
 
-  has_many :spot_likes, :dependent => :destroy
-  has_many :likes, through: :spot_likes
+  has_many :likes, dependent: :destroy
+  has_many :users_who_like, through: :likes, source: :user
 
-  has_many :pictures, :dependent => :destroy
+  has_many :photos, :dependent => :destroy
   
   scope :recent, :limit => 4, :order => 'created_at DESC'
   
@@ -31,12 +31,4 @@ class Spot < ActiveRecord::Base
   validates :city, presence:true, length: {minimum: 2}
   validates :postcode, length: {maximum: 8}
   validates :description, presence: true, length: {minimum: 10}
-
-  def self.search(search)
-	  if search
-	    find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
-	  else
-	    find(:all)
-	  end
-	end
 end

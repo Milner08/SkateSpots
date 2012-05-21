@@ -1,5 +1,5 @@
 <li class="span2">
-	<%= link_to photo, :class => "thumbnail" do %>
+	<%= link_to photo, :remote => true, :class => "thumbnail" do %>
 		<%= image_tag photo.picture.url(:thumb)%>		
 	<% end %>
 </li>

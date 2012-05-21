@@ -1,6 +1,6 @@
 module SpotsHelper
 	def getAddress(spot)
-		string = spot.name
+		string = "#{spot.name}"
 		string << ",#{spot.address1}"
 		if !spot.address2.empty? 
 			string << ",#{spot.address2}"

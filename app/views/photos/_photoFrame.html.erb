@@ -1,19 +1,17 @@
-<div class="modal hide fade" id="photoFrame">
-  <div class="modal-header">
-    <button class="btn close" data-dismiss="modal">×</button>
-    <h1><%= photo.title %></h1>
+<div class="modal-header">
+  <button class="btn close" data-dismiss="modal">×</button>
+  <h1 class="page-header"><%= @photo.title %> <small>By: <%= @photo.user.name %></small></h1>
+</div>
+<div class="modal-body">
+  	<%= image_tag @photo.picture.url(:medium), :class => "photo"%>
+</div>
+<div class="modal-footer row">
+  <div class="span3">Description:
+    <%= @photo.description %>
   </div>
-  <div class="modal-body">
-    	<%= image_tag photo.picture.url(:large), :class => "photo"%>
-      <p>Description:
-        <%= photo.description %></p>
-      <p>By: <%= photo.user.name %></p>
-  </div>
-  <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Close</a>
-    <% if photo.user = current_user || current_user.admin? %>
-      <%= link_to "Edit", edit_photo_path(photo), :class => "btn btn-info" %>
-      <%= link_to "Delete", photo, method: :delete, confirm: "You sure?", class: "btn btn-danger" %>
+    <% if @photo.user = current_user || current_user.admin? %>
+      <%= link_to "Edit", edit_photo_path(@photo), :class => "btn btn-info" %>
+      <%= link_to "Delete", @photo, method: :delete, confirm: "You sure?", class: "btn btn-danger" %>
     <% end %>
-  </div>
 </div>

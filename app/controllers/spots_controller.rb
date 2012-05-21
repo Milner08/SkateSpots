@@ -14,7 +14,6 @@ class SpotsController < ApplicationController
     if signed_in?
       @photo = Photo.new
     end
-    @photos = Photo.find_all_by_spot_id(@spot.id)
   end
 
   def create

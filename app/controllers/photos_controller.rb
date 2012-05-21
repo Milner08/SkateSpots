@@ -16,6 +16,9 @@ class PhotosController < ApplicationController
 
 	def show
     @photo = Photo.find(params[:id])
+    respond_to do |format|
+      format.js {render :layout => false}
+    end
   end
 
   def edit
@@ -24,8 +27,8 @@ class PhotosController < ApplicationController
 
   def update
     @photo = Photo.find(params[:id])
-    spot = Spot.find(@photo.spot_id)
-    if @photo.update_attributes(params[:picture])
+    spot = @photo.spot
+    if @photo.update_attributes(params[:photo])
       flash[:success] = "Picture updated!"
       redirect_to spot
     else
