@@ -44,6 +44,7 @@
         <% if signed_in? %>
           <div class="row">
             <section>
+              <% @review = @user.reviews.build() %>
               <%= render 'shared/review_form' %>
             </section> 
           </div> 

@@ -1,20 +1,20 @@
-<%@user.reviews.each do |review| %>
+<%@user.reviews.each do |r| %>
 <li class="review">
 	<div class="row">
 		<aside class="span2">
 			<span class="timestamp">
-	    	<%= time_ago_in_words(review.created_at).capitalize%> ago.
+	    	<%= time_ago_in_words(r.created_at).capitalize%> ago.
 	  	</span>
 	  	<span class="del">
-	  		<% if current_user?(review.user) || current_user.admin? %>
-	    		<%= link_to "delete", review, method:  :delete,
+	  		<% if current_user?(r.user) || current_user.admin? %>
+	    		<%= link_to "delete", r, method:  :delete,
 	                                     confirm: "You sure?",
-	                                     title:   review.content %>
+	                                     title:   r.content %>
 	  		<% end %>
 	  	</span>
 		</aside>
 		<section>
-			<span class="content"><%= review.content %></span>
+			<span class="content"><%= r.content %></span>
 		</section>
 	</div>
 </li>
