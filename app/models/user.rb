@@ -11,11 +11,14 @@
 #  remember_token  :string(255)
 #  admin           :boolean         default(FALSE)
 #  city            :string(255)
+#  style           :string(255)
 #
 
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :city, :style
-	has_secure_password
+	
+  has_secure_password
+
   has_many :reviews, dependent: :destroy 
 
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy

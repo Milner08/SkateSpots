@@ -12,10 +12,11 @@
 #  created_at  :datetime        not null
 #  updated_at  :datetime        not null
 #  description :text
+#  spotType    :string(255)
 #
 
 require 'spec_helper'
 
 describe Spot do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
 end

@@ -12,6 +12,7 @@
 #  created_at  :datetime        not null
 #  updated_at  :datetime        not null
 #  description :text
+#  spotType    :string(255)
 #
 
 class Spot < ActiveRecord::Base

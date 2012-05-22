@@ -11,6 +11,7 @@
 #  remember_token  :string(255)
 #  admin           :boolean         default(FALSE)
 #  city            :string(255)
+#  style           :string(255)
 #
 
 require 'spec_helper'
@@ -19,7 +20,8 @@ describe User do
 
   before do
     @user = User.new(name: "Example User", email: "user@example.com", 
-                     password: "foobar", password_confirmation: "foobar")
+                     password: "foobar", password_confirmation: "foobar",
+                     city: "Cardiff", style: "Normal")
   end
 
   subject { @user }
@@ -32,6 +34,8 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) } 
   it { should respond_to(:admin) }
+  it { should respond_to(:style) }
+  it { should respond_to(:city) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -41,8 +45,6 @@ describe User do
 
     it { should be_admin }
   end
-
-  it { should be_valid }
 
   describe "when name is not present" do
     before { @user.name = " " }
@@ -56,6 +58,16 @@ describe User do
 
   describe "when name is too long" do
     before { @user.name = "a" * 51 }
+    it { should_not be_valid }
+  end
+
+  describe "when style is not present" do
+    before { @user.style = " " }
+    it { should_not be_valid }
+  end
+
+  describe "when city is not present" do
+    before { @user.city = " " }
     it { should_not be_valid }
   end
 

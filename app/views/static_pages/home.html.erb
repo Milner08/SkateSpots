@@ -1,3 +1,4 @@
+<% provide(:title, '') %>
 <% if !signed_in? %>
 	<div class="row">
 		<div class="span12">
@@ -6,7 +7,7 @@
 
 			  <h2>This is the home page for the my new skate spot locator.</h2>
 
-			  <h3>Check out <a href="http://thisisbakery.co.uk">Bakery</a></h3>
+			  <h2>Check out <a href="http://thisisbakery.co.uk">Bakery</a></h2>
 			  <% if !signed_in? %>
 			  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 			  <% end %>
@@ -17,7 +18,7 @@
 <div class="row">
 	<% if signed_in? && !@local.nil?%>
 		<h1 class="span12 page-header nockover">Local Spots
-			<%= link_to raw('<i class="icon-plus icon-white"></i>   New spot'), new_spot_path, class: "btn btn-large btn-primary floatright" %>
+			<%= link_to raw('<i class="icon-plus icon-white"></i>   New spot'), new_spot_path, class: "hidden-phone btn btn-large btn-primary floatright" %>
 		</h1>
 		<%= render @local %>
 	<% end %>
