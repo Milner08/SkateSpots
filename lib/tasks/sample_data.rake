@@ -50,7 +50,7 @@ def make_reviews
   users = User.all(limit: 10)
   50.times do
     content = Faker::Lorem.sentence(5)
-    users.each{ |user| user.review.create!(content: content, spot_id: spot_id 1}
+    users.each{ |user| user.review.create!(content: content, spot_id: spot_id)}
   end
 end
 
