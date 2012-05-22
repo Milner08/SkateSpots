@@ -220,6 +220,34 @@ input, textarea, select, .uneditable-input {
   margin:0;
   vertical-align: middle;
   margin-right:4px;
+  i{
+    padding-right:7px;
+  }
+}
+
+.page-header{
+  .btn{
+    float:right;
+  }
+}
+
+select{
+  height:38px;
+  line-height:28px;
+}
+
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @import "bootstrap-responsive";

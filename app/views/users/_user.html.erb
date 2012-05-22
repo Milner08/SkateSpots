@@ -1,6 +1,20 @@
-<li>
-  <%= gravatar_for user %>
-  <%= link_to user.name, user %><br>
-  <% @user = user %> <!--Cheating :B -->
-  <%= render 'shared/follow_form' if signed_in? %>
-</li>
+<div class="span4">
+	<%= link_to user do %>
+		<section class="well">
+			<h3><%= user.name %></h3><hr>
+			<section class="user thumbnail">
+         <%= gravatar_for user %>
+      </section>
+    	<section>
+    		<dl>
+    			<dt>City</dt>
+    			<dd><%= user.city %></dd>
+    			<dt>Style</dt>
+    			<dd><%= user.style %></dd>
+    			<% @user = user %> <!--Cheating :B -->
+      		<dt><%= render 'shared/follow_form' if signed_in? %></dt>
+    		</dl>
+    	</section>
+		</section>
+	<% end %>
+</div>

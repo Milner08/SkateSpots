@@ -1,6 +1,5 @@
 <% provide(:title, @spot.name) %>
-<h1 class="page-header">Spot <small><%= @spot.name %></small><%= render 'shared/like_form' if signed_in? %>
-</h1>
+<h1 class="page-header">Spot <small><%= @spot.name %></small><%= render 'shared/like_form' if signed_in? %></h1>
 <div class="row">
   <aside class="span3">
   	<section>
@@ -35,7 +34,11 @@
     <div class="tab-content">
 
       <div class="tab-pane active" id="about">
-        <%= @spot.description %>  
+        <dl>
+          <dt>Type:</dt><dd><%= @spot.spotType %></dd>
+          <dt>Description:</dt><dd><%= @spot.description %></dd>
+          <dt>Reviews</dt><dd><%= @spot.reviews.count %></dd>
+        </dl>
       </div>
 
       <div class="tab-pane" id="reviews">

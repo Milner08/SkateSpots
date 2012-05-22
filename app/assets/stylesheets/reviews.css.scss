@@ -9,7 +9,7 @@
   list-style: none;
   margin: 0;
   .review {
-    padding: 10px 0 0;
+    padding: 10px;
     border-bottom:1px solid $grayLighter;
     aside{
       border-right:1px solid #e8e8e8;
@@ -45,5 +45,6 @@
   textarea {
     height: 100px;
     margin-bottom: 5px;
+    margin-top:10px;
   }
 }

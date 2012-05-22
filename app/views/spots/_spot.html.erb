@@ -6,8 +6,11 @@
           		<img border="0" src="http://maps.googleapis.com/maps/api/staticmap?zoom=13&size=100x100&markers=color:red%7Clabel:<%= spot.name %>%7C<%= getAddress spot%>&sensor=false" alt="Google Map"/>
       		</section>
     		<section>
-      			<%= spot.description %><br>
-      			There are <%= spot.reviews.count %>	reviews for this spot.
+      		<dl>
+	          <dt>Type:</dt><dd><%= spot.spotType %></dd>
+	          <dt>Description:</dt><dd><%= spot.description %></dd>
+	          <dt>Reviews</dt><dd><%= spot.reviews.count %></dd>
+	        </dl>
     		</section>
 		</section>
 	<% end %>

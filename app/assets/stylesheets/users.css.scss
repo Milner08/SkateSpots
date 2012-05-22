@@ -37,6 +37,32 @@
   }
 }
 
+.span4{
+  .well{
+    padding:7.5px 14px;
+    .user{
+      float:left;
+      margin-right:10px;
+      margin-bottom:7px;
+      .gravatar {
+        clear:both;
+        margin: 0;
+        padding:0;
+      }
+      form{
+        margin-top:0;
+      }
+    }
+  }
+  a{
+    color:$gray;
+  }
+  a:hover{
+    text-decoration:none;
+    color:$blue;
+  }
+}
+
 .user_avatars {
   overflow: auto;
   margin-top: 10px;
@@ -45,6 +71,9 @@
   }
 }
 
+.follow_form .new_relationship .btn, .follow_form .edit_relationship .btn {
+  margin-top:2px;
+}
 .gravatar {
   float: left;
   margin-right: 10px;

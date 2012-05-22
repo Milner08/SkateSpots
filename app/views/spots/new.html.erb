@@ -21,6 +21,9 @@
       <%= f.label :postcode %>
       <%= f.text_field :postcode %>
 
+      <%= f.label :spotType, "Type"%>
+      <%= f.select(:spotType, { "Outdoor Park" => "Outdoor Park", "Indoor Park" => "Indoor Park", "Location" => "Location"}) %>
+
       <%= f.label :description %>
       <%= f.text_area :description %>
 

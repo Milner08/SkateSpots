@@ -1,0 +1,28 @@
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+
+  <%= f.label :style, "Style"%>
+  <%= f.select(:style, { "Regular" => "Regular", "Goofy" => "Goofy"}) %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation, "Confirm Password" %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+   <% if current_user.admin? || current_user?(@user) %>
+    <%= link_to "Delete", @user, method: :delete, confirm: "You sure?", class: "btn btn-medium btn-danger" %>
+  <% end %>
+<% end %>
+<%= gravatar_for @user %>
+<a href="http://gravatar.com/emails">change</a>

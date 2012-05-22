@@ -15,7 +15,7 @@
 #
 
 class Spot < ActiveRecord::Base
-  attr_accessible :address1, :address2, :city, :name, :postcode, :user_id, :description
+  attr_accessible :address1, :address2, :city, :name, :postcode, :user_id, :description, :spotType
 
   has_many :reviews, dependent: :destroy
 
@@ -30,5 +30,6 @@ class Spot < ActiveRecord::Base
   validates :name, presence: true, length: {minimum: 2}
   validates :city, presence:true, length: {minimum: 2}
   validates :postcode, length: {maximum: 8}
+  validates :spotType, presence: true
   validates :description, presence: true, length: {minimum: 10}
 end

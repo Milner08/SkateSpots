@@ -14,7 +14,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation, :city
+  attr_accessible :name, :email, :password, :password_confirmation, :city, :style
 	has_secure_password
   has_many :reviews, dependent: :destroy 
 
@@ -40,6 +40,7 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
   validates :city, presence: true
+  validates :style, presence: true
 
   def following?(other_user)
     relationships.find_by_followed_id(other_user.id)
