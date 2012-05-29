@@ -1,0 +1,14 @@
+<div id="<%= review.id %>upvote">
+	<%= form_for(current_user.votes.build(votable_id: review.id), remote: true) do |f| %>
+		<%= hidden_field_tag :votable_id, review.id %>
+		<%= hidden_field_tag :like, "true" %>
+	  <%= f.submit "Upvote", class: "btn btn-primary btn-medium span2" %>
+	<% end %>
+</div>
+<div id="<%= review.id%>downvote">
+	<%= form_for(current_user.votes.build(votable_id: review.id), remote: true) do |f| %>
+		<%= hidden_field_tag :votable_id, review.id %>
+		<%= hidden_field_tag :like, "false" %>
+	  <%= f.submit "Downvote", class: "btn btn-danger btn-medium span2" %>
+	<% end %>
+</div>

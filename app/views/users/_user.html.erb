@@ -11,6 +11,10 @@
     			<dd><%= user.city %></dd>
     			<dt>Style</dt>
     			<dd><%= user.style %></dd>
+          <dt>Followers</dt>
+          <dd><%= user.followers.count %></dd>
+          <dt>Following</dt>
+          <dd><%= user.followed_users.count %></dd>
     			<% @user = user %> <!--Cheating :B -->
       		<dt><%= render 'shared/follow_form' if signed_in? %></dt>
     		</dl>

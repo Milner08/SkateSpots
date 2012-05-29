@@ -11,7 +11,7 @@
   .review {
     padding: 10px;
     border-bottom:1px solid $grayLighter;
-    aside{
+    aside.user{
       border-right:1px solid #e8e8e8;
       width:120px;
       display:block;
@@ -35,8 +35,22 @@
 			}
     }
     section{
-      padding-left:7.5px;
-
+      padding-left:10px;
+      margin-left:0;
+    }
+    aside.votes{
+      margin:0;
+      padding:0;
+      padding-left:18px;
+      border-left:1px solid $grayLighter;
+      width:100px;
+      .span2{
+        width:100px;
+        margin-left:0;
+      }
+      form{
+        margin:5px;
+      }
     }
   }
 }

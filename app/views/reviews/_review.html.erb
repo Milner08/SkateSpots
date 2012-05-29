@@ -1,6 +1,6 @@
 <li class="review">
 	<div class="row">
-		<aside class="span2">
+		<aside class="span2 user">
 			<div class="userpic">
 				<%= gravatar_for review.user %>
 			</div>
@@ -17,9 +17,15 @@
 	                                     title:   review.content %>
 	  		<% end %>
 	  	</span>
+	  	<span class="score">
+		  	Score: <em id="score"><%= review.score %></em>
+			</span>
 		</aside>
-		<section>
+		<section class="span6">
 			<span class="content"><%= review.content %></span>
 		</section>
+		<aside class="span2 votes">
+			<%= render 'shared/vote_form', :review => review %>
+		</aside>
 	</div>
 </li>

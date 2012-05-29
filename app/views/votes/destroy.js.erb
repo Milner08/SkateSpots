@@ -1,0 +1,2 @@
+$("#<%= @review.id %>vote_form").html("<%= escape_javascript(render('votes/vote', :review => @review)) %>")
+$("#score").html('<%= @review.score %>')

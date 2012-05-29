@@ -26,7 +26,7 @@
 
     <ul class="nav nav-tabs" id="myTab">
       <li class="active"><a href="#about" data-toggle="tab">About</a></li>
-      <li><a href="#reviews" data-toggle="tab">Reviews (<%= @spot.reviews.count %>)</a></li>
+      <li><a href="#reviewsPane" data-toggle="tab">Reviews (<%= @spot.reviews.count %>)</a></li>
       <li><a href="#photos" data-toggle="tab">Photos (<%= @spot.photos.count %>)</a></li>
       <li><a href="#edit" data-toggle="tab">Edit</a></li>
     </ul>
@@ -41,10 +41,10 @@
         </dl>
       </div>
 
-      <div class="tab-pane" id="reviews">
-        <ol class="reviews">
+      <div class="tab-pane" id="reviewsPane">
+        <ol class="reviews" id="reviews">
           <% if @spot.reviews.any?%>
-            <%= render @reviews %>
+            <%= render @reviews.sort_by(&:score).reverse %>
           <% end %>
         </ol>
         <%= will_paginate @reviews %>

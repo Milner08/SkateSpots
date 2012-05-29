@@ -7,8 +7,6 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
-      <%= @user.email %> 
-      <%= @user.city %>
       <%= render 'shared/stats' %>
     </section>
   </aside>
@@ -28,6 +26,12 @@
           <dd><%= @user.city %></dd>
           <dt>Style</dt>
           <dd><%= @user.style %></dd>
+          <dt>Email</dt>
+          <dd><%= @user.email %></dd>
+          <dt>Followers</dt>
+          <dd><%= link_to @user.followers.count, followers_user_path(@user) %></dd>
+          <dt>Following</dt>
+          <dd><%= link_to @user.followed_users.count, following_user_path(@user) %></dd>
         </dl>
       </div>
 

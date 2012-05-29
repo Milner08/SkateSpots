@@ -33,6 +33,8 @@ class User < ActiveRecord::Base
 
   has_many :pictures, dependent: :destroy
 
+  has_many :votes, dependent: :destroy
+
   before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
 
@@ -67,6 +69,32 @@ class User < ActiveRecord::Base
 
   def dislike!(spot)
     likes.find_by_spot_id(spot.id).destroy
+  end
+
+  def voted?(review)
+    votes.find_by_votable_id(review.id)
+  end
+
+  def upvote!(review)
+    votes.create!(votable_id: review.id, votable_type: review.class.name ,like: true)
+  end
+
+  def downvote!(review)
+    votes.create!(votable_id: review.id, votable_type: review.class.name ,like: false)
+  end
+
+  def unvote!(review)
+    votes.find_by_votable_id(review.id).destroy
+  end
+
+  def upvoted?(review)
+    vote = votes.find_by_votable_id(review.id)
+    vote.upvote?
+  end
+
+  def downvoted?(review)
+    vote = votes.find_by_votable_id(review.id)
+    vote.downvote?
   end
 
   private

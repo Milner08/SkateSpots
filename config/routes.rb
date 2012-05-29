@@ -13,6 +13,7 @@ Skate::Application.routes.draw do
   resources :reviews, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
   resources :likes, only: [:create, :destroy]
+  resources :votes, only: [:create, :destroy, :update]
   resources :photos
 
   match '/signup',  to: 'users#new'

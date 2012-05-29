@@ -1,0 +1,6 @@
+<% if current_user.upvoted?(@review) %>
+	$("#<%= @review.id %>vote_form").html("<%= escape_javascript(render('votes/upvoted', :review => @review)) %>")
+<% else %>
+	$("#<%= @review.id %>vote_form").html("<%= escape_javascript(render('votes/downvoted', :review => @review)) %>")
+<% end %>
+$("#score").html('<%= @review.score %>')
