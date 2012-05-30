@@ -25,9 +25,9 @@ class Review < ActiveRecord::Base
   default_scope order: 'reviews.created_at DESC'
 
   def score
-  	up = 0
-  	down = 0
-    counter = 0
+  	up = 0.0
+  	down = 0.0
+    counter = 0.0
   	self.votes.each do |v|
   		if v.upvote?
   			up += 1
