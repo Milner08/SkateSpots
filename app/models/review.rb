@@ -25,9 +25,9 @@ class Review < ActiveRecord::Base
   default_scope order: 'reviews.created_at DESC'
 
   def score
-  	up = 0.0
-  	down = 0.0
-    counter = 0.0
+  	up = 0
+  	down = 0
+    counter = 0
   	self.votes.each do |v|
   		if v.upvote?
   			up += 1
@@ -37,10 +37,14 @@ class Review < ActiveRecord::Base
   		counter += 1
   	end
     logger.debug "The score loop iterated #{counter} times"
+    score = 0
     if(up-down == 0)
       score = 0
     else
-      score = (up-down)/counter
+      up*=10
+      down*=10
+      counter*=10
+      score = ((up-down)/counter)
     end
   end
 
