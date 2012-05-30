@@ -3,4 +3,4 @@
 <% else %>
 	$("#<%= @review.id %>vote_form").html("<%= escape_javascript(render('votes/downvoted', :review => @review)) %>")
 <% end %>
-$("#score").html('<%= @review.score %>')
+$("#<%= @review.id %>score").html('<%= @review.score %>')

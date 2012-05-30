@@ -37,7 +37,11 @@ class Review < ActiveRecord::Base
   		counter += 1
   	end
     logger.debug "The score loop iterated #{counter} times"
-    score = up-down
+    if(up-down == 0)
+      score = 0
+    else
+      score = (up-down)/counter
+    end
   end
 
 end
