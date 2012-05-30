@@ -41,10 +41,7 @@ class Review < ActiveRecord::Base
     if(up-down == 0)
       score = 0
     else
-      up*=10
-      down*=10
-      counter*=10
-      score = ((up-down)/counter)
+      score = (up-down)
     end
   end
 
