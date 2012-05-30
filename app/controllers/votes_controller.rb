@@ -9,7 +9,7 @@ class VotesController < ApplicationController
       current_user.downvote!(@review)
     end
     respond_to do |format|
-      format.html { redirect_to @review }
+      format.html { redirect_back_or @review }
       format.js
     end
   end
@@ -19,7 +19,7 @@ class VotesController < ApplicationController
     @review = Review.find(@vote.votable_id)
     current_user.unvote!(@review)
     respond_to do |format|
-      format.html { redirect_to @review }
+      format.html { redirect_back_or @review }
       format.js
     end
   end
@@ -30,7 +30,7 @@ class VotesController < ApplicationController
     @vote.like = !@vote.like
     if @vote.save
       respond_to do |format|
-        format.html { redirect_to @review }
+        format.html { redirect_back_or @review }
         format.js
       end
     end
