@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+function initialize() {
+	$(function (){
+		var activeTab = $('[href=#' + getURLParameter('tab') + ']');
+   	activeTab && activeTab.tab('show');
+	});
+}
+
+function getURLParameter(name) {
+  return decodeURI(
+    (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+  );
+}

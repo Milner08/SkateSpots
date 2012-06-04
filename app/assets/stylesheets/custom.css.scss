@@ -231,6 +231,10 @@ input, textarea, select, .uneditable-input {
   }
 }
 
+.pagination{
+  padding-left: $gridGutterWidth + 10px;
+}
+
 select{
   height:38px;
   line-height:28px;

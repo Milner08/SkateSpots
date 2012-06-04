@@ -1,3 +1,4 @@
+require 'will_paginate/array'
 class UsersController < ApplicationController
   before_filter :signed_in_user, only: [:index, :edit, :update, :destroy, :following, :followers, :admin]
   before_filter :correct_user,   only: [:edit, :update]
@@ -10,6 +11,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @reviews = @user.reviews.paginate(page: params[:page])
   end
 
   def create
@@ -37,7 +39,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = (current_user.blank? ? User.all : User.find(:all, :conditions => ["id != ?", current_user.id])).paginate(page: params[:page])
   end
 
   def destroy

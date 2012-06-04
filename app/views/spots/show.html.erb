@@ -43,11 +43,12 @@
 
       <div class="tab-pane" id="reviewsPane">
         <ol class="reviews" id="reviews">
+        <%= will_paginate @reviews, :params=>{:tab=>"reviewsPane"} %>
           <% if @spot.reviews.any?%>
-            <%= render @reviews.sort_by(&:score).reverse %>
+            <%= render @reviews%>
           <% end %>
         </ol>
-        <%= will_paginate @reviews %>
+        <%= will_paginate @reviews, :params=>{:tab=>"reviewsPane"} %>
         <% if signed_in? %>
           <div class="row">
             <section>

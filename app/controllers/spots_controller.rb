@@ -1,3 +1,4 @@
+require 'will_paginate/array'
 class SpotsController < ApplicationController
 	before_filter :signed_in_user, only: [:create, :new, :edit, :update, :destroy]
   before_filter :admin_user,     only: :destroy
@@ -9,7 +10,7 @@ class SpotsController < ApplicationController
 
   def show
     @spot = Spot.find(params[:id])
-    @reviews = @spot.reviews.paginate(page: params[:page])
+    @reviews = @spot.reviews.sort_by(&:score).reverse.paginate(page: params[:page])
     @review = @spot.reviews.build if signed_in?
     if signed_in?
       @photo = Photo.new

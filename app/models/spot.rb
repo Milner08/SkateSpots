@@ -30,7 +30,7 @@ class Spot < ActiveRecord::Base
   validates :user_id, presence: true
   validates :name, presence: true, length: {minimum: 2}
   validates :city, presence:true, length: {minimum: 2}
-  validates :postcode, length: {maximum: 8}
+  validates :postcode, length: {maximum: 10}
   validates :spotType, presence: true
   validates :description, presence: true, length: {minimum: 10}
 end

@@ -14,7 +14,7 @@
 
     <ul class="nav nav-tabs" id="myTab">
       <li class="active"><a href="#info" data-toggle="tab">Info</a></li>
-      <li><a href="#reviews" data-toggle="tab">Reviews (<%= @user.reviews.count %>)</a></li>
+      <li><a href="#reviewsPane" data-toggle="tab">Reviews (<%= @user.reviews.count %>)</a></li>
       <% if current_user == @user %><li><a href="#edit" data-toggle="tab">Edit</a></li><%end%>
     </ul>
 
@@ -35,13 +35,13 @@
         </dl>
       </div>
 
-      <div class="tab-pane" id="reviews">
+      <div class="tab-pane" id="reviewsPane">
         <% if @user.reviews.any? %>
-          <%= will_paginate @user.reviews.paginate(page: params[:page]) %>
+          <%= will_paginate @reviews, :params=>{:tab=>"reviewsPane"} %>
           <ol class="reviews">
             <%= render "showreview" %>
           </ol>
-          <%= will_paginate @user.reviews.paginate(page: params[:page]) %>
+          <%= will_paginate @reviews, :params=>{:tab=>"reviewsPane"} %>
         <% else %>
           <h1><%= @user.name %> hasnt posted any reviews </h1>
         <% end %>
