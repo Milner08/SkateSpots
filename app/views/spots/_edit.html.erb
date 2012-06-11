@@ -19,7 +19,7 @@
   <%= f.label :spotType, "Type"%>
   <%= f.select(:spotType, { "Outdoor Park" => "Outdoor Park", "Indoor Park" => "Indoor Park", "Location" => "Location"}) %>
 
-  <%= f.label :description %>
+  <%= f.label :description, "Description: Remember to describe any obsticals, the surface and anything else thats important" %>
   <%= f.text_area :description %>
 
   <%= f.submit "Save changes", class: "btn btn-primary" %>   
