@@ -28,7 +28,7 @@
       <li class="active"><a href="#about" data-toggle="tab">About</a></li>
       <li><a href="#reviewsPane" data-toggle="tab">Reviews (<%= @spot.reviews.count %>)</a></li>
       <li><a href="#photos" data-toggle="tab">Photos (<%= @spot.photos.count %>)</a></li>
-      <li><a href="#edit" data-toggle="tab">Edit</a></li>
+      <% if signed_in? %> <li><a href="#edit" data-toggle="tab">Edit</a></li> <%end %>
     </ul>
 
     <div class="tab-content">
@@ -53,7 +53,9 @@
       </div>
 
       <div class="tab-pane" id="photos">
-        <a data-toggle="modal" href="#addPhoto" class="btn btn-primary btn-medium" id="addPic">Add Photo</a>  
+        <% if signed_in? %>
+          <a data-toggle="modal" href="#addPhoto" class="btn btn-primary btn-medium" id="addPic">Add Photo</a>  
+        <% end %>
         <section>
           <%= will_paginate @photos, :params=>{:tab=>"photos"} %>
           <ul class="thumbnails">
@@ -62,15 +64,19 @@
           <%= will_paginate @photos, :params=>{:tab=>"photos"} %>     
         </section>
       </div>
-
-      <div class="tab-pane" id="edit">
-        <%= render 'edit'%>
-      </div>
+      
+      <% if signed_in? %>
+        <div class="tab-pane" id="edit">
+          <%= render 'edit'%>
+        </div>
+      <% end %>
 
     </div>
 
   </div><!-- End of span9, Main content -->
 </div>
-<%= render 'photos/new_photo' %>
+<% if signed_in? %>
+  <%= render 'photos/new_photo' %>
+<% end %>
 <div class="modal hide fade" id="photoFrame">
 </div>

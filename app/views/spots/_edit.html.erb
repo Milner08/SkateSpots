@@ -23,7 +23,7 @@
   <%= f.text_area :description %>
 
   <%= f.submit "Save changes", class: "btn btn-primary" %>   
-  <% if current_user.admin? %>
+  <% if current_user && current_user.admin? %>
     <%= link_to "Delete", @spot, method: :delete, confirm: "You sure?", class: "btn btn-danger" %>
   <% end %>
 <% end %>

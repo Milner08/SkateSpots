@@ -11,7 +11,7 @@
 	    	<%= time_ago_in_words(review.created_at).capitalize%> ago.
 	  	</span>
 	  	<span class="del">
-	  		<% if current_user?(review.user) || current_user.admin? %>
+	  		<% if current_user?(review.user) || (signed_in? && current_user.admin?) %>
 	    		<%= link_to "delete", review, method:  :delete,
 	                                     confirm: "You sure?",
 	                                     title:   review.content %>

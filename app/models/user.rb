@@ -97,10 +97,6 @@ class User < ActiveRecord::Base
     vote.downvote?
   end
 
-  def admin?
-    self.admin
-  end
-
   private
 
     def create_remember_token
