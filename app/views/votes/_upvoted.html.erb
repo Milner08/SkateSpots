@@ -2,11 +2,11 @@
 	<%= form_for(current_user.votes.find_by_votable_id(review.id),
              html: { method: :delete },
              remote: true) do |f| %>
-  	<%= f.submit "Upvoted", class: "btn btn-medium span2" %>
+  	<%= f.submit "Upvoted", class: "btn btn-inverse btn-medium span2" %>
 	<% end %>
 </div>
 <div id="<%= review.id%>downvote">
 	<%= form_for(current_user.votes.find_by_votable_id(review.id), remote: true) do |f| %>
-	  <%= f.submit "Downvote", class: "btn btn-danger btn-medium span2" %>
+	  <%= f.submit "Downvote", class: "btn btn-warning btn-medium span2" %>
 	<% end %>
 </div>

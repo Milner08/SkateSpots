@@ -8,7 +8,7 @@
     		<section>
       		<dl>
 	          <dt>Type:</dt><dd><%= spot.spotType %></dd>
-	          <dt>Description:</dt><dd><%= spot.description %></dd>
+	          <dt>Description:</dt><dd><%= truncate(spot.description, :length => 100) %></dd>
 	          <dt>Reviews</dt><dd><%= spot.reviews.count %></dd>
 	        </dl>
     		</section>

@@ -2,8 +2,15 @@
 	<%= link_to user do %>
 		<section class="well">
 			<h3><%= user.name %></h3><hr>
-			<section class="user thumbnail">
-         <%= gravatar_for user %>
+			<section class="user">
+        <div class="thumbnail">
+          <%= gravatar_for user %>
+          <br/>
+        </div>
+        <div class="button">
+          <% @user = user %> <!--Cheating :B -->
+          <%= render 'shared/follow_form' if signed_in? %>
+        </div>
       </section>
     	<section>
     		<dl>
@@ -15,8 +22,6 @@
           <dd><%= user.followers.count %></dd>
           <dt>Following</dt>
           <dd><%= user.followed_users.count %></dd>
-    			<% @user = user %> <!--Cheating :B -->
-      		<dt><%= render 'shared/follow_form' if signed_in? %></dt>
     		</dl>
     	</section>
 		</section>

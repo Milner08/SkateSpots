@@ -58,6 +58,22 @@
 .new_review {
   textarea {
     height: 100px;
+  }
+  .content{
+    width:83%;
+    margin-bottom: 10px;
+    margin-top:10px;
+    float:left;
+    marign-right:10px;
+  }
+  .butt{
+    width:100px;
+    clear:both;
+    display:inline;
+    padding-left:20px;
+  }
+  .btn{
+    width:100px;
     margin-bottom: 5px;
     margin-top:10px;
   }

@@ -12,9 +12,8 @@ class SpotsController < ApplicationController
     @spot = Spot.find(params[:id])
     @reviews = @spot.reviews.sort_by(&:score).reverse.paginate(page: params[:page])
     @review = @spot.reviews.build if signed_in?
-    if signed_in?
-      @photo = Photo.new
-    end
+    @photo = Photo.new if signed_in?
+    @photos = @spot.photos.paginate(page: params[:page])
   end
 
   def create

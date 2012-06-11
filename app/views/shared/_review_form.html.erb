@@ -1,8 +1,6 @@
 <%= form_for(@review) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new review..." %>
-    <%= f.hidden_field :spot_id %>
-  </div>
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <div class="content"><%= f.text_area :content, placeholder: "Compose new review..." %></div>
+  <%= f.hidden_field :spot_id %>
+  <div class="butt"><%= f.submit "Post", class: "btn btn-primary" %></div>
 <% end %>

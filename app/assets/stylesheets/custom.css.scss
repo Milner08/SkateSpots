@@ -230,8 +230,10 @@ input, textarea, select, .uneditable-input {
     float:right;
   }
 }
-
 .pagination{
+  padding-left: $gridGutterWidth;
+}
+.span12 .pagination{
   padding-left: $gridGutterWidth + 10px;
 }
 

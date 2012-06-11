@@ -44,14 +44,27 @@
       float:left;
       margin-right:10px;
       margin-bottom:7px;
-      .gravatar {
+      .thumbnail{
+        float:left;
+        margin-bottom:10px;
+        .gravatar {
+          clear:both;
+          margin: 0;
+          padding:0;
+        }
+      }
+      .button{
         clear:both;
-        margin: 0;
-        padding:0;
+        *{
+          width:90px;
+        }
       }
       form{
         margin-top:0;
       }
+    }
+    dl{
+    margin:0;
     }
   }
   a{

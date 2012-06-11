@@ -2,6 +2,9 @@
 <li class="review">
 	<div class="row">
 		<aside class="span2 user">
+			<span>
+				For: <%= r.spot.name %>
+			</span>
 			<span class="timestamp">
 	    	<%= time_ago_in_words(r.created_at).capitalize%> ago.
 	  	</span>
