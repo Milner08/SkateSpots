@@ -25,7 +25,7 @@
 			<span class="content"><%= review.content %></span>
 		</section>
 		<aside class="span2 votes">
-			<%= render 'shared/vote_form', :review => review %>
+			<% if signed_in? %><%= render 'shared/vote_form', :review => review %><% end %>
 		</aside>
 	</div>
 </li>
