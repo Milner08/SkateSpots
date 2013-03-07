@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"makr",
+				"make_reviews"
+			],
+			[
+				"en",
+				"environment"
+			],
+			[
+				"votab",
+				"votable_type"
+			],
+			[
+				"up",
+				"upvotes"
+			],
+			[
+				"revi",
+				"review_id"
+			],
+			[
+				"vot",
+				"votable_id"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"vo",
+				"votable_id"
+			],
+			[
+				"follow",
+				"followers"
+			],
+			[
+				"fil",
+				"fill_in"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"add",
+				"address2"
+			],
+			[
+				"addres",
+				"address1"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
 				"text",
 				"text-align:   (property)"
 			],
@@ -26,10 +86,6 @@
 			[
 				"P",
 				"Pictures"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"bu",
@@ -62,10 +118,6 @@
 			[
 				"displ",
 				"display"
-			],
-			[
-				"marg",
-				"margin"
 			],
 			[
 				"tex",
@@ -256,66 +308,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/static_pages/home.html.erb",
-			"settings":
-			{
-				"buffer_size": 825,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/spots/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 2220,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/spots/_edit.html.erb",
-			"settings":
-			{
-				"buffer_size": 651,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/likes/_unlike.html.erb",
-			"settings":
-			{
-				"buffer_size": 212,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/likes/_like.html.erb",
-			"settings":
-			{
-				"buffer_size": 227,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/photos/_new_photo.html.erb",
-			"settings":
-			{
-				"buffer_size": 762,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/photos/_photoFrame.html.erb",
-			"settings":
-			{
-				"buffer_size": 737,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/photos/_photo.html.erb",
-			"settings":
-			{
-				"buffer_size": 129,
+				"buffer_size": 2754,
 				"line_ending": "Unix"
 			}
 		},
@@ -323,39 +319,7 @@
 			"file": "app/assets/stylesheets/custom.css.scss",
 			"settings":
 			{
-				"buffer_size": 3082,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/spots.css.scss",
-			"settings":
-			{
-				"buffer_size": 776,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/_header.html.erb",
-			"settings":
-			{
-				"buffer_size": 1525,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 735,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/reviews.css.scss",
-			"settings":
-			{
-				"buffer_size": 880,
+				"buffer_size": 3428,
 				"line_ending": "Unix"
 			}
 		}
@@ -444,23 +408,112 @@
 	},
 	"file_history":
 	[
+		"/Users/tomas/Downloads/Rayc (1).java",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/_review.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/user.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/new.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/_vote.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/_upvoted.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/index.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/index.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spots_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/users_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/relationships_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/reviews.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/users.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/_downvoted.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_header.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_showreview.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_spot.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_user.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_review_form.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/spot.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/vote.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/review.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/votes_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/log/development.log",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show_follow.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/lib/tasks/sample_data.rake",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_vote_form.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/create.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/update.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/destroy.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/Gemfile",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/application.js",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/googleMaps.js",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120528212305_rename_voteable_type_to_votable_type_in_vote.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/config/routes.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/models/votes.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120528152333_modify_votes.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/home.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/factories.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/upvoted.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120528000152_add_voting_to_reviews.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/create.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/photo_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/like_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/spot_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/user_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/relationship_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/relationships_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/review_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/sessions_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/authentication_pages_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/support/utilities.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/helpers/application_helper_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/new.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/static_pages_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/review_pages_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/relationship_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/pictures_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/spot_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/like_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/pictures_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/controllers/spot_like_controller_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/spot_like_spec.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/photos.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/likes.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/relationships.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spots.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_unfollow.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_follow.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120522011022_rename_type_to_spot_type_in_spots.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/edit.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/spots_helper.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_new_photo.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/config/s3.yml",
+		"/Users/tomas/Development/Ruby/Rails/skate/config/s3.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/photos_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/show.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/destroy.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/create.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_like.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_unlike.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_photo.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_photoFrame.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/likes_controller.rb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/showPhoto.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/show.html.erb.old",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_follow_form.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/relationships/destroy.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/relationships/create.js.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/pictures.css.scss",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_like_form.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spot_like.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/config/environments/development.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/edit.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_photo.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/config/routes.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518165142_rename_pictures_to_photos.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/photo.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spots_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_new_photo.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_header.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/pictures.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/application.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/index.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/index.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/new.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518173935_rename_ulr_to_title_for_photos.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/photos/_pictures.html.erb",
@@ -471,107 +524,18 @@
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_new_picture.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/pictures_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/pictures.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spots.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/home.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/application.js",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/spots.js.coffee",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/index.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/show.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_picture.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/pictures/_newPicture.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120518150641_add_picture_to_pictures.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/Gemfile",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_user.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/index.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/relationships.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/reviews.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/spot_like.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/users.css.scss",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_unfollow.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/static_pages_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/spot.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/new.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/edit.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/user.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/ie.css.sass",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_follow.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_unlike.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/_like.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120517001007_remove_picture_id_from_pictures.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/like.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/likes_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_like_form.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spot_likes_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120516235502_add_url_to_pictures.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120516004956_create_spot_likes.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/destroy.js.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/likes/create.js.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_unlike.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_like.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot_likes/create.js.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/spot_like.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120516232303_rename_spot_likes_to_likes.rb",
-		"/Users/tomas/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_dislike.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot_likes/destroy.js.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/relationships_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/relationship.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_follow_form.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spot_like_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_follow.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/help.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_stats.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/users_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_spot.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_showreview.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/sessions/new.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/new.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/edit.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/about.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/static_pages/contact.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show_follow.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/spots_helper.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/reviews_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_review_form.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/_review.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/_showreview.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/_show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120513013120_add_lat_and_long_to_spots.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120513184441_create_relationships.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/sessions_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/googleMaps.js",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/models/review.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/javascripts/jquery.gmap-1.1.0-min.js",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_error_messages.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/config/environment.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/application_helper.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120512013206_create_reviews.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_spot_error_messages.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_user_error_messages.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot/new.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot/index.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot/_spot.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot/show.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spot/edit.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spot_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/sessions_helper.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/authentication_pages_spec.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/spec/models/user_spec.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/spec/requests/user_pages_spec.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/spec/factories.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/lib/tasks/sample_data.rake",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120510185154_add_admin_to_users.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/spec/support/utilities.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120510171211_add_remember_token_to_users.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/application_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/config/environments/test.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/helpers/users_helper.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/config/environments/production.rb",
-		"/Users/tomas/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120510032749_add_index_to_users_email.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_footer.html.erb"
+		"/Users/tomas/Development/Ruby/Rails/skate/db/migrate/20120516235502_add_url_to_pictures.rb"
 	],
 	"find":
 	{
@@ -590,6 +554,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"15px",
+			"@spot.name",
 			"><%= @",
 			".btn",
 			"page-header",
@@ -649,132 +615,23 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/static_pages/home.html.erb",
-					"settings":
-					{
-						"buffer_size": 825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								539,
-								547
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/spots/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 2220,
+						"buffer_size": 2754,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								95,
-								95
+								885,
+								885
 							]
 						],
 						"settings":
@@ -811,7 +668,9 @@
 								"regex-selectors": "warning",
 								"rules-count": "warning",
 								"shorthand": "warning",
+								"star-property-hack": "warning",
 								"text-indent": "warning",
+								"underscore-property-hack": "warning",
 								"unique-headings": "warning",
 								"universal-selector": "warning",
 								"vendor-prefix": true,
@@ -829,11 +688,13 @@
 							{
 								"browser": true,
 								"evil": true,
+								"indent": 1.0,
 								"regexdash": true,
 								"sub": true,
 								"trailing": true,
 								"wsh": true
 							},
+							"pep8": true,
 							"pep8_ignore":
 							[
 								"E501"
@@ -858,7 +719,8 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
-								"Python Django": "python"
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
@@ -866,661 +728,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/spots/_edit.html.erb",
-					"settings":
-					{
-						"buffer_size": 651,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								497,
-								497
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/likes/_unlike.html.erb",
-					"settings":
-					{
-						"buffer_size": 212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/likes/_like.html.erb",
-					"settings":
-					{
-						"buffer_size": 227,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								213,
-								213
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/photos/_new_photo.html.erb",
-					"settings":
-					{
-						"buffer_size": 762,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								41,
-								41
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/photos/_photoFrame.html.erb",
-					"settings":
-					{
-						"buffer_size": 737,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								635,
-								635
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/photos/_photo.html.erb",
-					"settings":
-					{
-						"buffer_size": 129,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 599.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1528,23 +736,23 @@
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
-					"buffer": 8,
+					"buffer": 1,
 					"file": "app/assets/stylesheets/custom.css.scss",
 					"settings":
 					{
-						"buffer_size": 3082,
+						"buffer_size": 3428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2580,
-								2580
+								463,
+								463
 							]
 						],
 						"settings":
@@ -1581,7 +789,9 @@
 								"regex-selectors": "warning",
 								"rules-count": "warning",
 								"shorthand": "warning",
+								"star-property-hack": "warning",
 								"text-indent": "warning",
+								"underscore-property-hack": "warning",
 								"unique-headings": "warning",
 								"universal-selector": "warning",
 								"vendor-prefix": true,
@@ -1599,11 +809,13 @@
 							{
 								"browser": true,
 								"evil": true,
+								"indent": 1.0,
 								"regexdash": true,
 								"sub": true,
 								"trailing": true,
 								"wsh": true
 							},
+							"pep8": true,
 							"pep8_ignore":
 							[
 								"E501"
@@ -1628,7 +840,8 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
-								"Python Django": "python"
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
@@ -1636,447 +849,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2881.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/assets/stylesheets/spots.css.scss",
-					"settings":
-					{
-						"buffer_size": 776,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								372,
-								384
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/views/layouts/_header.html.erb",
-					"settings":
-					{
-						"buffer_size": 1525,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								7
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								735,
-								732
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/assets/stylesheets/reviews.css.scss",
-					"settings":
-					{
-						"buffer_size": 880,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								832,
-								851
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"text-indent": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2428.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2112,7 +885,7 @@
 		"cols":
 		[
 			0.0,
-			0.582757994186,
+			0.522534575405,
 			1.0
 		],
 		"rows":
