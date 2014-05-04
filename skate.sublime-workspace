@@ -308,19 +308,21 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/spots/show.html.erb",
+			"file": "config/environments/production.rb",
 			"settings":
 			{
-				"buffer_size": 2754,
+				"buffer_size": 2480,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/custom.css.scss",
+			"contents": "[SideBarGit@SublimeText skate/] /usr/local/git/bin/git push\n\n# Improve this command, the output or the tab title by posting here:\n# http://www.sublimetext.com/forum/viewtopic.php?f=5&t=3405\n# Tip: F5 will run the command again and refresh the contents of this tab\n\nTo git@github.com:Milner08/SkateSpots.git\n ! [rejected]        master -> master (non-fast-forward)\nerror: failed to push some refs to 'git@github.com:Milner08/SkateSpots.git'\nTo prevent you from losing history, non-fast-forward updates were rejected\nMerge the remote changes (e.g. 'git pull') before pushing again.  See the\n'Note about fast-forwards' section of 'git push --help' for details.",
 			"settings":
 			{
-				"buffer_size": 3428,
-				"line_ending": "Unix"
+				"buffer_size": 657,
+				"line_ending": "Unix",
+				"name": "No Title",
+				"scratch": true
 			}
 		}
 	],
@@ -408,6 +410,8 @@
 	},
 	"file_history":
 	[
+		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/show.html.erb",
+		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
 		"/Users/tomas/Downloads/Rayc (1).java",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/reviews/_review.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/models/user.rb",
@@ -420,14 +424,12 @@
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/spots_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/users_controller.rb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/controllers/relationships_controller.rb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/custom.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/reviews.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/assets/stylesheets/users.css.scss",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/votes/_downvoted.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/layouts/_header.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/show.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_showreview.html.erb",
-		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/show.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/spots/_spot.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/users/_user.html.erb",
 		"/Users/tomas/Development/Ruby/Rails/skate/app/views/shared/_review_form.html.erb",
@@ -615,241 +617,79 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/spots/show.html.erb",
+					"file": "config/environments/production.rb",
 					"settings":
 					{
-						"buffer_size": 2754,
+						"buffer_size": 2480,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								885,
-								885
+								144,
+								144
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"indent": 1.0,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 599.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "app/assets/stylesheets/custom.css.scss",
 					"settings":
 					{
-						"buffer_size": 3428,
+						"buffer_size": 657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								463,
-								463
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"annotations":
+							"SideBarGitBackground": false,
+							"SideBarGitCommand":
 							[
-								"TODO",
-								"README",
-								"FIXME"
+								"/usr/local/git/bin/git",
+								"push"
 							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"indent": 1.0,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"SideBarGitIsASideBarGitTab": true,
+							"SideBarGitItem": "/Users/tomas/Development/Ruby/Rails/skate",
+							"SideBarGitModal": true,
+							"SideBarGitNoResults": "No output to show",
+							"SideBarGitSyntaxFile": false,
+							"SideBarGitTitle": "No Title",
+							"SideBarGitToStatusBar": false,
+							"default_dir": "/Users/tomas/Development/Ruby/Rails",
+							"encoding": "UTF-8",
+							"fallback_encoding": "UTF-8",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2428.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
